@@ -3,7 +3,7 @@ import SearchResultPart from './SearchResultPart.vue'
 </script>
 <template>
   <div
-    class="rounded-xl bg-white shadow-lg w-[1000px] h-[160px] px-9 py-10 flex"
+    class="rounded-xl bg-white shadow-lg w-full h-[160px] px-9 py-10 flex gap-8"
   >
     <SearchResultPart :title="'Ip address'" :value="'Some Value'" />
     <SearchResultPart :title="'Ip address'" :value="'Some Value'" />
