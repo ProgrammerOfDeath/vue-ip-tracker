@@ -8,8 +8,8 @@ const props = defineProps<Props>()
 </script>
 <template>
   <div class="result-part flex-1 relative after:bg-dark-gray">
-    <div class="text-sm text-dark-gray uppercase mb-4">{{ props.title }}</div>
-    <div class="text-very-dark-gray text-lg">{{ props.value }}</div>
+    <div class="text-xs text-dark-gray uppercase mb-4">{{ props.title }}</div>
+    <div class="text-very-dark-gray text-xl">{{ props.value }}</div>
   </div>
 </template>
 
@@ -19,7 +19,7 @@ const props = defineProps<Props>()
   display: block;
   position: absolute;
   width: 1px;
-  height: 80%;
+  height: 85%;
   top: 50%;
   bottom: 50%;
   transform: translate(-50%, -50%);

@@ -3,7 +3,7 @@ import { ref } from 'vue'
 const searchInput = ref('')
 </script>
 <template>
-  <div class="flex h-14 w-[550px] shadow-md">
+  <div class="flex h-14 w-[550px] shadow-md z-10">
     <input
       class="py-4 flex-1 px-3 rounded-l-xl text-dark-gray"
       type="text"
