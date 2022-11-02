@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import SearchBar from './components/SearchBar.vue'
-import SearchResultVue from './components/SearchResult.vue'
+import SearchBar from '@/components/SearchBar.vue'
+import SearchResultVue from '@/components/SearchResult.vue'
 import TheHeader from '@/components/layout/TheHeader.vue'
 import TheMap from '@/components/layout/TheMap.vue'
 </script>
