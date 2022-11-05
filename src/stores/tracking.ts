@@ -5,11 +5,13 @@ export const useTrackingStore = defineStore('tracking', {
   state: () => ({
     trackingData: {} as TrackingData | null,
     ipAddress: '',
+    loading: false,
   }),
   getters: {},
   actions: {
     async getTrackingData() {
       try {
+        this.$state.loading = true
         const apiRes = await fetch(
           `${import.meta.env.VITE_API_URL}/country?apiKey=${
             import.meta.env.VITE_API_KEY
@@ -25,6 +27,8 @@ export const useTrackingStore = defineStore('tracking', {
         this.$state.trackingData = apiResData
       } catch (e) {
         console.log(e)
+      } finally {
+        this.$state.loading = false
       }
     },
   },

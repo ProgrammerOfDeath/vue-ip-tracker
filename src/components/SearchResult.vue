@@ -12,10 +12,12 @@ const store = useTrackingStore()
     <SearchResultPart
       :title="'Ip address'"
       :value="store.$state.trackingData?.ip ?? ''"
+      :placeholder="'1.1.1.1'"
     />
     <SearchResultPart
       :title="'Location'"
       :value="store.$state.trackingData?.location?.region ?? ''"
+      :placeholder="'Germany'"
     />
     <SearchResultPart
       :title="'Timezone'"
@@ -24,6 +26,7 @@ const store = useTrackingStore()
     <SearchResultPart
       :title="'ISP'"
       :value="store.$state.trackingData?.isp ?? ''"
+      :placeholder="'Google LLC'"
     />
   </div>
 </template>
