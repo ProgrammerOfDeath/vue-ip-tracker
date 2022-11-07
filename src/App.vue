@@ -9,7 +9,7 @@ import TheMap from '@/components/layout/TheMap.vue'
   <TheHeader />
   <main class="min-h-screen text-dark-gray">
     <div class="mx-auto absolute z-[1000] top-14 left-0 right-0 w-2/3">
-      <div class="flex justify-center mb-5">
+      <div class="w-[550px] mx-auto mb-5">
         <SearchBar />
       </div>
       <SearchResultVue />
