@@ -4,6 +4,7 @@ import Leaf from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 
 onMounted(() => {
+  var someVar = "hello world";
   const titleLayer = Leaf.tileLayer(
     'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
     {
